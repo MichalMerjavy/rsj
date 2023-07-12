@@ -1,0 +1,22 @@
+Ze starého evidenčního systému se podařilo do textového souboru Smlouvy.txt vyexportovat historii
+kupních smluv pro nákupy a prodeje pozemků. U každé smlouvy je uveden seznam jednotlivých
+pozemků – identifikátor (pětimístné číslo), pak výměra pozemku v m2 a nakonec nakoupený/prodaný
+podíl (jako desetinné číslo).
+
+Zde je okomentovaný příklad:
+Nakup 2011-05-15
+56451 6411 1.0000 // nakoupeno 6411 m2
+89246 75541 1.0000
+40411 1268 0.1899 // nakoupená pouze část 240.7932 m2
+87455 7063 0.0746
+Prodej 2011-12-03
+87455 7063 0.0746 // prodáno, co se dříve nakoupilo
+56451 6411 0.5000 // polovina prodána, polovina nám ještě zůstala
+Nakup 2014-10-24
+40411 1268 0.8101 // nakoupen zbytek pozemku, teď už ho máme celý
+...
+Vaším úkolem je data z textového souboru načíst do vhodné datové struktury v paměti a napsat
+funkci, která k zadanému datumu vypočítá seznam parcel v majetku a celkovou výměru.
+Kód napište v C# jako Windows Console Application. Můžete použít LINQ. Žádné knihovny třetích
+stran nejsou potřeba. Práce na řešení by měla zabrat 2-3 hodiny. Celý hotový projekt pošlete jako ZIP
+soubor, spolu se stručným popisem navrženého řešení, případně i dalšími podněty a komentáři.

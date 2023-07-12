@@ -1,0 +1,12 @@
+Vsetky nakupy/predaje v ten isty den su pod jednou transakciou v ktorej je list pozemkov, ktorych sa to tykalo, ci to bol nakup alebo predaj a den.
+Pozemky maju id, plochu a percento plochy, ktora sa kupovala/predavala.
+
+Zoznam parciel k urcitemu datumu zistim tak ze si zoradim vsetky transakcie podla datumu, ked som na transakcii,
+ktora sa stala po datume tak koncim aby som nemusel prechadzat vsetky transakcie.
+
+Pozemky v transakciach pridavam do dictionary aby som nemusel prechadzat vsetky pozemky,
+ked chcem niektore odobrat kvoli tomu, ze sa predali.
+
+V pripade, ked sa predava viac plochy z pozemku ako vlastnim, tak od celkovej plochy odratam iba tu, ktoru som vlastnil.
+V pripade, ked sa predava pozemok, ktory nevlastnim tak iba pokracujem.
+V pripade, ked kupime viac ako 100% tak ratam iba 100% plochy.
